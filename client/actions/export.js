@@ -1,0 +1,2 @@
+export const UPDATE_EXTENSION = 'UPDATE_EXTENSION'
+export const EXPORT = 'EXPORT'
