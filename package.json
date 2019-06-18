@@ -1,6 +1,6 @@
 {
   "name": "@things-factory/export-base",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "dist-server/index.js",
   "browser": "client/index.js",
   "things-factory": true,
@@ -25,5 +25,7 @@
   "dependencies": {
     "@things-factory/shell": "*"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@things-factory/tester": "*"
+  }
 }

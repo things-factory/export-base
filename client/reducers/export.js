@@ -16,7 +16,8 @@ const exporting = (state = INITIAL_STATE, action) => {
       }
 
     case EXPORT:
-      state.extensions[action.export.extension].export(action.export.params)
+      let extension = action.export.extension
+      state.extensions[extension].export(action.exportable)
 
     default:
       return state
