@@ -19,8 +19,8 @@ export default function bootstrap() {
   })
 }
 
-function dataToJson({ extension, data, name }) {
-  const records = typeof data == 'function' ? data.call() : data
+async function dataToJson({ extension, data, name }) {
+  const records = typeof data == 'function' ? await data.call() : data
   const json = JSON.stringify(records, null, 2)
 
   const link = document.createElement('a')
